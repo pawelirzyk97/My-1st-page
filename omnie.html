@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Paweł Irzyk - portfolio</title>
+	<meta name="description" content="Zatrudnisz mnie?" />
+	<meta name="keywords" content="IT, programmin, html, css, javascript" />
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="css/fontello.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato" rel='stylesheet' type='text/css'>
+	<script src="timer.js"></script>
+	
+	
+</head>
+<body onload="odliczanie();">
+
+	<div id="container">
+		
+		<div class="rectangle"> 
+		
+		<div id="logo"><a href="index.html" class="index"> Paweł Irzyk</div></a>			
+			<div id="zegar">12:00:00</div>
+			<div style="clear: both;"></div>
+			
+		
+		</div>
+		
+			
+		
+		<div class="square__kimjestem"> 
+		
+			<div class="rectangle__kimjestem"> 
+			
+				<h1 id="przedstaw"> Cześć, jestem Paweł ! <div style="clear: both;"></div> </h1>
+			
+			</div>
+		<div class="square__inside__big"> 
+		
+			<div class="square__inside"> 
+			
+				Nazywam się Paweł Irzyk, mam 22 lata, pochodzę z okolic Rzeszowa lecz obecnie mieszkam w Krakowie gdzie jestem studentem informatyki na trzecim roku na Politechnice Krakowskiej im. Tadeusza Kościuszki. 
+				Obecnie poszukuję stażu w dziale IT, chciałbym podszkolić swoje umiejętności z programowania. Pasje do programowania odkryłem w czasach liceum i ciągle kształce się w tej dziedzine, największe obycie mam z językami Java i C++. Obecnie jestem w trakcie kursu z programowania frontendowego a efektem jest ta strona, która sam stworzyłem. W czasie wolnym spędzam czas na siłowni. Gram też półprofesjonalnie w siatkówkę w drużynie Recco, która obecnie występuje w III Lidze TKKF w Krakowie. Po prawej możesz ujrzeć zdjęcia, które pokazują mnie i moje pasje.
+			
+			</div>
+		
+			<div class="square__inside__2"> 
+				<img id="obrazek" src="0.jpg" />
+			</div>
+		</div>
+		
+		
+		</div>
+		
+		
+	</div>
+		
+		
+
+	
+		
+	
+		
+		<div class="rectangle"> 2019 &copy; Paweł Irzyk <i class="demo-icon icon-mail-alt"></i> irzykpawel97@gmail.com</div>
+		
+	
+	
+	
+	</div>
+	<script src="timer.js"></script>
+<script>
+	  ile=3; //ile jest obrazkow
+	  //no need to edit below
+	  i=0;
+	  function galeria(){
+		document.getElementById('obrazek').src=i+'.jpg';
+		if(i<ile-1){
+		  i++
+		}else{
+		  i=0
+		}
+		setTimeout('galeria()',2000)
+	  }
+	  window.onload=function(){
+		for(x=0; x<ile; x++){
+		  new Image().src=x+'.jpg'
+		}
+		galeria()
+	  }
+	  
+	  
+ </script>
+ 
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Paweł Irzyk - portfolio</title>
+	<meta name="description" content="Zatrudnisz mnie?" />
+	<meta name="keywords" content="IT, programmin, html, css, javascript" />
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="css/fontello.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato" rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="timer.js"></script>
+	
+	<script src="jquery.scrollTo.min.js"></script>
+	
+	<script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			
+			
+	
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	</script>
+</head>
+<body onload="odliczanie();">
+
+	<div id="container">
+		<a href="#" class="scrollup"></a>
+		<div class="rectangle"> 
+		
+		<div id="logo"><a href="index.html" class="index"> Paweł Irzyk</div></a>			
+			<div id="zegar"></div>
+			<div style="clear: both;"></div>
+			
+		</div>
+		<div class="square"> 
+		
+				<div class="tile1"> 
+				<a href="omnie.html" class="tilelink"><i class="demo-icon icon-user"></i></br>          Kim jestem?</a>
+				
+				</div>
+				<div class="tile1__"> 
+				<a href="https://drive.google.com/open?id=1KLSLR5tTPjtgmyNpKvGQZOMFSxIBq5CH" class="tilelink1"><i class="demo-icon icon-attach"></i></br> Moje CV </a>
+				</div>
+				<div style="clear: both"></div>
+				<div class="tile2">
+				<a href="rysowanie.html" class="tilelink2"><i class="demo-icon icon-brush"></i></br> Porysuj sobie! </a>
+				</div>
+				<div class="tile3"> 
+				<a href="kontakt.html" class="tilelink3"><i class="demo-icon icon-mail"></i></br> Kontakt </a>
+				</div>
+				<div style="clear: both"></div>
+		
+		</div>
+		<div class="square"> 
+				<div class="gh"> <a href="https://github.com/pawelirzyk97" target="_blank" class="sociallink">
+				<i class="icon-github-circled"> </i></a> </div>
+				<div class="fb"> 
+				<a href="https://www.facebook.com/pawko11" target="_blank" class="sociallink"><i class="icon-facebook-squared"></i></a>
+				</div>
+				<div class="gg">
+				<a href="https://www.facebook.com/pawko11" target="_blank" class="sociallink"><i class=" icon-gplus"></i> </a>
+				</div>
+				<div class="tt"> <a href=https://www.linkedin.com/in/irzykpawel97/ target="_blank" class="sociallink"> <i class="demo-icon icon-linkedin-squared"> </i> </a></div>
+				
+				<div style="clear: both;"></div>
+		</div>
+		
+		
+
+	
+		<div class="rectangle"> 2019 &copy; Paweł Irzyk <i class="demo-icon icon-mail-alt"></i> irzykpawel97@gmail.com</div>
+	</div>
+		
+		
+		
+	
+	
+	
+	</div>
+</body>
+
+</html>
